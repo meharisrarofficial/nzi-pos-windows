@@ -1,0 +1,32 @@
+{
+  "name": "nzi-enterprises-pos",
+  "version": "1.0.0",
+  "description": "NZI ENTERPRISES POS Software",
+  "main": "main.js",
+  "author": "NZI ENTERPRISES",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "37.2.6",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "com.nzi.enterprises.pos",
+    "productName": "NZI ENTERPRISES POS",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}
